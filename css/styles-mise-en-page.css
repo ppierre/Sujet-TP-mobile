@@ -1,0 +1,7 @@
+
+/* Pour les images en pleine largeur */
+img {
+    max-width: 100%;
+    height: auto;
+}
+

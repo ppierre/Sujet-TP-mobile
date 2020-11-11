@@ -1,0 +1,133 @@
+
+/****************
+*
+*   Charte graphique
+*
+****************/
+
+/*
+    Corps :
+    http://www.fontsquirrel.com/fonts/source-sans-pro
+    http://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
+*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic);
+
+/*
+    Titres :
+    http://www.fontsquirrel.com/fonts/crimson
+    http://www.google.com/fonts#QuickUsePlace:quickUse/Family:Crimson+Text
+*/
+    /* Ne charger que ce qui est utile */
+
+/*
+    Symboles :
+    http://fortawesome.github.io/Font-Awesome/get-started/#bootstrapcdn
+    http://fortawesome.github.io/Font-Awesome/icon/facebook/
+*/
+
+
+/*
+    Couleurs :
+*/
+/*noinspection CssOverwrittenProperties*/
+.exemples-couleurs {
+    color: #f6f1eb; /* Fond de page */
+    color: #4a382a; /* couleur de texte*/
+    color: #b5a38c; /* couleur de texte element time */
+    color: #82a523; /* couleur de lien*/
+    color: #ff6635; /* couleur de lien survolé*/
+    color: #999;    /* bordures */
+    color: #CCC;    /* bordures */
+}
+
+/****************
+*
+*   Réglages typographie/couleur
+*
+****************/
+
+html {                  /* Pour faciliter l'usage des em/rem */
+                        /* permet de varier l'ensemble des tailles avec une seule valeur */
+    font-size: 62.5%;   /* 1rem == 10px */
+}
+
+
+body {                          /* S'applique à la racine : à l'ensemble de la page par héritage */
+
+    background-color: #xxxxxx;  /* toujours mettre la couleur de fond avec */
+    color: #xxxxxx;             /* la couleur du texte (même si on ajoutera une image en fond) */
+
+    /* Mettre les déclarations qui correspondent à votre @font-face et votre maquette */
+    /* (éventuellement, le copier de l'import) */
+                                    /* famille de police */
+                                    /* variante de police */
+                                    /* graisse de police */
+
+    /* La taille de texte */
+    font-size: /*1.6rem*/ 160%;              /* 16px  noté en % car bug de chrome */
+                                    /* 20px : toujours avec font-size, fixer line-height */
+
+    /* Marge de toute la page (peut-être 0) */
+
+}
+
+/* Pour les liens */
+                      		    /* pour tout élément A simple, lié ou visité */
+                                    /* pas de soulignement de texte */
+                                    /* couleur du texte = #82a523 */
+
+                 				/* pour tout élément a survolé */
+
+
+
+/* pour tous les titres */
+
+    /* Fixer couleur et typographie */
+
+
+
+
+
+
+/* tailles de chaques titres */
+
+
+
+    /* Toujours mettre les marges sur les éléments */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fixer la police de la NAV de classe CSS "navigation-principale" */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pour un éléments précis basé sur l'imbrication */
+/* L'élément TIME qui est dans le FOOTER des ARTICLE de SECTION de class CSS "selection" */
+
+
+
+
+
+
