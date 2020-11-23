@@ -8,14 +8,14 @@
 /*
     Corps :
     http://www.fontsquirrel.com/fonts/source-sans-pro
-    http://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
+    https://fonts.google.com/specimen/Source+Sans+Pro
 */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic);
-
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*
     Titres :
     http://www.fontsquirrel.com/fonts/crimson
-    http://www.google.com/fonts#QuickUsePlace:quickUse/Family:Crimson+Text
+    https://fonts.google.com/specimen/Crimson+Text
 */
     /* Ne charger que ce qui est utile */
 
@@ -59,12 +59,12 @@ body {                          /* S'applique à la racine : à l'ensemble de la
 
     /* Mettre les déclarations qui correspondent à votre @font-face et votre maquette */
     /* (éventuellement, le copier de l'import) */
-                                    /* famille de police */
+    font-family: "Source Code Pro", sans-serif; /* famille de police */
                                     /* variante de police */
                                     /* graisse de police */
 
     /* La taille de texte */
-    font-size: /*1.6rem*/ 160%;              /* 16px  noté en % car bug de chrome */
+    font-size: 1.6rem;              /* 16px  noté en % car bug de chrome */
                                     /* 20px : toujours avec font-size, fixer line-height */
 
     /* Marge de toute la page (peut-être 0) */
@@ -89,7 +89,7 @@ body {                          /* S'applique à la racine : à l'ensemble de la
 
 
 
-/* tailles de chaques titres */
+/* tailles de chaque titres */
 
 
 
