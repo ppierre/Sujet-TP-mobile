@@ -40,6 +40,7 @@
     color: #CCC;    /* bordures */
 }
 
+
 /****************
 *
 *   Réglages typographie/couleur
@@ -47,87 +48,83 @@
 ****************/
 
 html {                  /* Pour faciliter l'usage des em/rem */
-                        /* permet de varier l'ensemble des tailles avec une seule valeur */
-    font-size: 62.5%;   /* 1rem == 10px */
+    /* permet de varier l'ensemble des tailles avec une seule valeur */
+    font-size: 62.5%;   /* 1em == 10px */
 }
 
 
 body {                          /* S'applique à la racine : à l'ensemble de la page par héritage */
 
-    background-color: #xxxxxx;  /* toujours mettre la couleur de fond avec */
-    color: #xxxxxx;             /* la couleur du texte (même si on ajoutera une image en fond) */
+    background-color: #f6f1eb;  /* toujours mettre la couleur de fond avec */
+    color: #4a382a;             /* la couleur du texte (même si on ajoutera une image en fond) */
 
     /* Mettre les déclarations qui correspondent à votre @font-face et votre maquette */
     /* (éventuellement, le copier de l'import) */
-    font-family: "Source Code Pro", sans-serif; /* famille de police */
-                                    /* variante de police */
-                                    /* graisse de police */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 
     /* La taille de texte */
-    font-size: 1.6rem;              /* 16px  noté en % car bug de chrome */
-                                    /* 20px : toujours avec font-size, fixer line-height */
+    font-size: 1.6rem;          /* 16px */
+    line-height: 2rem;          /* 20px : toujours avec font-size, fixer line-height */
 
     /* Marge de toute la page (peut-être 0) */
-
+    margin: 0 10px;
 }
 
 /* Pour les liens */
-                      		    /* pour tout élément A simple, lié ou visité */
-                                    /* pas de soulignement de texte */
-                                    /* couleur du texte = #82a523 */
-
-                 				/* pour tout élément a survolé */
-
-
+a:link, a:visited {     		/* pour tout élément A simple, lié ou visité */
+    text-decoration: none;		/* pas de soulignement de texte */
+    color: #82a523;				/* couleur du texte = #82a523 */
+}
+a:hover, a:focus {						/* pour tout élément a survolé */
+    color: #ff6635;
+}
 
 /* pour tous les titres */
-
-    /* Fixer couleur et typographie */
-
-
-
-
-
-
-/* tailles de chaque titres */
-
-
-
-    /* Toujours mettre les marges sur les éléments */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Fixer la police de la NAV de classe CSS "navigation-principale" */
-
-
-
-
-
-
-
-
-
-
-
+h1,h2,h3,h4 {
+    /* Fixer couleur et typographie : */
+    color: #82a523;
+    /* background-color: #f6f1eb; */
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+/* tailles de chaques titres */
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 1rem 0; /* Toujours mettre les marges sur les éléments */
+}
+h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 1rem 0 0 0;
+}
+h4 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0;
+}
 
 /* Pour un éléments précis basé sur l'imbrication */
-/* L'élément TIME qui est dans le FOOTER des ARTICLE de SECTION de class CSS "selection" */
 
+section.selection > article > footer > time {
+    color: #b5a38c;
+}
 
+nav.navigation-principale {
+    color: #fff;
+    background-color: #4a382a;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: 400;
 
-
-
-
+    font-size: 2rem;
+    line-height: 4rem;
+}

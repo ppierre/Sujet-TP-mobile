@@ -13,7 +13,7 @@
 
 <header>
     <h2><a href="index.html">Sarasota Tea co. | The Tea house</a></h2>
-    <nav class="navigation-principale">
+    <nav class="navigation-principale  no-touch">
         <a href="#"><h4>Menu de navigation</h4></a> <!-- utilise un élément A pour iOS! -->
         <ul>
             <li><a href="#">Sélections</a></li>
@@ -89,13 +89,35 @@
         <h4>Réseaux sociaux</h4>
         <ul>
             <!-- Ajoutez les icone avec Font Awesome -->
-            <li><a href="http://twitter.com">Twitter</a></li>
-            <li><a href="http://www.facebook.com">Facebook</a></li>
+            <li><a href="http://twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
         </ul>
     </nav>
     <p><a href="#">Mentions légales</a> <a href="#">Contact</a> <span>© 2013 Food Sense, all rights reserved.</span></p>
 </footer>
 
-
+<script>
+    (function(document,window) {
+        if ( 'ontouchstart' in document.documentElement) {
+            [].forEach.call(
+                document.getElementsByClassName("no-touch"),
+                function(element) {
+                    element.classList.remove('no-touch');
+                    element.addEventListener("touchstart", function (event) {
+                        element.classList.toggle('simul-hover');
+                        // force à suivre les liens
+                        if (event.target.tagName=="A" ) {
+                            var newHref = event.target.getAttribute("href");
+                            if (newHref!==null) {
+                                window.location.href = newHref;
+                            }
+                            event.preventDefault();
+                        }
+                    });
+                }
+            );
+        }
+    })(document,window);
+</script>
 </body>
 </html>

@@ -1,1 +1,41 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
 
+.border {
+    /*box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    width:100%;
+    height:auto;
+    padding: 1rem;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+}
+
+body > header > h2 > a {
+    display: block;           /* ou inline-block */
+    text-indent: -9999px; /* Pour cacher le texte en le laissant "accessible" */
+    width: 100%;              /* occupe toute la largeur du parent */
+    padding-top: 48%;     /* hauteur 50% de la largeur du parent ! */
+    height: 0;                   /* hauteur "vide", déjà donnée par le padding */
+    background-image: url(images-interface/logo.jpg); /* image d'interface */
+    background-size: cover; /* redimensionne le fond suivant la taille */
+}
+
+.social a>span {
+    clip: rect(1px,1px,1px,1px);
+    position: absolute;
+    display: block;
+}
+
+.savoir-plus::after {
+    content: " »";
+}
+
+.navigation-principale > ul {
+    display: none;      /* caché par défaut */
+}
+/* quand on survole le menu */
+.navigation-principale.no-touch:hover > ul,
+.navigation-principale.simul-hover > ul
+{
+    display: block;     /* montre le menu */
+}
